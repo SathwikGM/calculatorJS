@@ -1,0 +1,43 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: #2b2d42;
+}
+
+.container-grid{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh; 
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows:minmax(100px, auto) repeat(5,100px);
+}
+
+.container-grid>button{
+   cursor: pointer;
+   font-size: 2rem;
+   outline: none;   
+   border: 1px solid #000;
+    
+}
+
+.span-two{
+    grid-column: span 2;
+}
+
+.operation{
+    background-color: #ff7d00;
+}
+
+.result{
+    font-size: 2rem;
+    background-color: #00bbf9;
+    grid-column: 1/-1;
+    display: flex;
+    align-items: flex-end;
+    align-content: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+}
