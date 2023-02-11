@@ -1,4 +1,4 @@
-*{
+*{  box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
@@ -12,7 +12,7 @@ body{
     align-content: center;
     min-height: 100vh; 
     grid-template-columns: repeat(4, 100px);
-    grid-template-rows:minmax(100px, auto) repeat(5,100px);
+    grid-template-rows: minmax(120px, auto) repeat(5, 100px);
 }
 
 .container-grid>button{
@@ -27,7 +27,7 @@ body{
     grid-column: span 2;
 }
 
-.operation{
+.operation, .equals{
     background-color: #ff7d00;
 }
 
@@ -37,7 +37,8 @@ body{
     grid-column: 1/-1;
     display: flex;
     align-items: flex-end;
-    align-content: flex-end;
     justify-content: space-around;
     flex-direction: column;
+    word-wrap: break-word;
+    word-break: break-all;
 }
