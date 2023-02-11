@@ -29,7 +29,7 @@ const compute = () => {
     const numOne = parseFloat(previous);
     const numTwo = parseFloat(current);
 
-    if (isNaN(previous) || isNaN(current)) return
+    if (isNaN(numOne) || isNaN(numTwo)) return
 
     if (operation === "+") {
         result = numOne + numTwo;
